@@ -1,0 +1,49 @@
+#root {
+  text-align: center;
+  margin: auto;
+  /* border: 2px solid ; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-areas: 
+  "matrix simplex equations"
+  "parameters tim tim"
+  ;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  width: 90vw;
+  height: 90vh;
+  gap: 10px;
+}
+
+.cell{
+  background-color: yellow;
+
+}
+.c1{
+  grid-area: matrix;
+}
+.c2{
+  grid-area: simplex;
+}
+
+.c3{
+  grid-area: equations;
+}
+
+.c4{
+  grid-area: parameters;
+}
+
+.c5{
+  grid-area: tim;
+}

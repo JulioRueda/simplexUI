@@ -496,9 +496,9 @@ def equilibria(payoffs, ax):
             eqs_plot = np.array(np.asmatrix(proj) * eq_positions[i].reshape((3, 1)))
 
             if line_indicator == 0:
-                if num_stability[i] and stabilities[i] is "sink":
+                if num_stability[i] and stabilities[i] == "sink":
                     eq_face = "black"
-                elif not num_stability[i] and stabilities[i] is "source":
+                elif not num_stability[i] and stabilities[i] == "source":
                     eq_face = "white"
                 else:
                     eq_face = "grey"

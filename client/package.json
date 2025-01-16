@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@mui/base": "^5.0.0-beta.68",
     "@mui/material": "^6.3.1",
     "katex": "^0.16.19",
     "plotly.js": "^2.35.3",

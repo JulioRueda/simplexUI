@@ -77,6 +77,18 @@ def plot_time():
 
     return jsonify(y.tolist())
 
+
+@app.route('/change_iconditions', methods=['POST'])
+def change_changeiconditions():
+    global x0 
+
+    data = request.get_json()
+    ic = data.get('ic')
+    if round(np.array(ic).sum(),2) == 1.0:
+        x0 = ic
+    return "Done"
+
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8081))
     app.run(debug=True, port=port)

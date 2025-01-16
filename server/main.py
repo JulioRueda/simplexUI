@@ -8,6 +8,7 @@ from Simplex import plot_static
 from flask_cors import CORS
 import time
 from scipy.integrate import solve_ivp
+import os
 
 app = Flask(__name__)
 

@@ -7,6 +7,9 @@ import Plot from 'react-plotly.js';
 
 function App() {
 
+  //const backendURL = "http://localhost:8081";
+  const backendURL = "simplexui-production.up.railway.app";
+
   const layout = {
     // title: 'Mi Gráfico con Plotly',
     xaxis: {
@@ -91,7 +94,7 @@ const handleSliderChange = (row, col, value) => {
 // Función para enviar la matriz al backend
 const sendDataToBackend = async (matrixData) => {
   try {
-    const response = await fetch('http://localhost:8081/generate-graph', {
+    const response = await fetch(`${backendURL}/generate-graph`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -114,7 +117,7 @@ const sendDataToBackend = async (matrixData) => {
 
 const updateSeries = async () => {
   try {
-    const response = await fetch('http://localhost:8081/plot_time', {
+    const response = await fetch(`${backendURL}/plot_time`, {
       method: 'GET',
       // headers: {
       //   'Content-Type': 'application/json',

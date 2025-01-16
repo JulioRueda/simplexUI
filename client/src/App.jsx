@@ -8,7 +8,7 @@ import Plot from 'react-plotly.js';
 function App() {
 
   //const backendURL = "http://localhost:8081";
-  const backendURL = "simplexui-production.up.railway.app";
+  const backendURL = "https://simplexui-production.up.railway.app";
 
   const layout = {
     // title: 'Mi Gráfico con Plotly',

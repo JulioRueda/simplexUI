@@ -6,8 +6,8 @@ import Plot from 'react-plotly.js';
 
 function App() {
 
-  const backendURL = "http://localhost:8081";
-  //const backendURL = "https://simplexui-production.up.railway.app";
+  //const backendURL = "http://localhost:8081";
+  const backendURL = "https://simplexui-production.up.railway.app";
 
   const layout = {
     // title: 'Mi Gráfico con Plotly',
@@ -31,9 +31,9 @@ function App() {
 
 // Estado para la matriz de números (2x3 como ejemplo)
 const initialMatrix = [
-  [1.0, 0.7, 0.8],
-  [0.3, 1.0, 0.4],
-  [1.0, 0.2, 1.0]
+  [1.0, 0.6, 0.8],
+  [0.9, 1.0, 0.4],
+  [0.1, 0.2, 1.0]
 ];
 
 const initialState = [0.7,0.2,0.1];
